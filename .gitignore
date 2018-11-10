@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# youtube API credentials
+/src/sagas/ytApi.js
+
 # testing
 /coverage
 
