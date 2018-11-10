@@ -1,0 +1,38 @@
+
+:root {
+  --yt-red: #FF0000;
+  --link-blue: #2793E6;
+  --carbon: #282828;
+  --dark-red: #F00000;
+  --white: #FFFFFF;
+  --almost-white: #FEFEFE;
+  --bg-gray: #F9F9F9;
+  --icon-gray: #E3E3E3;
+  --line-gray: #CFCFCF;
+  --text-gray: #8C8C8C;
+  --black: #000000;
+}
+
+.yt-red { color: var(--yt-red) }
+.link-blue { color: var(--link-blue) }
+.carbon { color: var(--carbon) }
+.dark-red { color: var(--dark-red) }
+.white { color: var(--white) }
+.almost-white { color: var(--almost-white) }
+.bg-gray { color: var(--bg-gray) }
+.icon-gray { color: var(--icon-gray) }
+.line-gray { color: var(--line-gray) }
+.text-gray { color: var(--text-gray) }
+.black { color: var(--black) }
+
+.bg-yt-red { background-color: var(--yt-red) }
+.bg-link-blue { background-color: var(--link-blue) }
+.bg-carbon { background-color: var(--carbon) }
+.bg-dark-red { background-color: var(--dark-red) }
+.bg-white { background-color: var(--white) }
+.bg-almost-white { background-color: var(--almost-white) }
+.bg-bg-gray { background-color: var(--bg-gray) }
+.bg-icon-gray { background-color: var(--icon-gray) }
+.bg-line-gray { background-color: var(--line-gray) }
+.bg-text-gray { background-color: var(--text-gray) }
+.bg-black { background-color: var(--black) }

@@ -1,0 +1,38 @@
+.searchInputForm {
+  display: grid;
+  grid-template-columns: 7.7fr minmax(32px, 1fr);
+  grid-template-rows: 44px auto;
+}
+
+.searchInput {
+  grid-column: 1/2; grid-row: 1/2;
+  composes: text-size-default from '../../styles/typography.css';
+  composes: default-object-height padding-x-big from '../../styles/layout.css';
+  composes: input-search from '../../styles/borders.css';
+}
+
+.searchInput:focus {
+  outline: none;
+  border: 1px solid rgba(56,56,56,0.5);
+}
+
+.formSubmit {
+  grid-column: 2/3; grid-row: 1/2;
+
+  composes: bg-bg-gray from '../../styles/colors.css';
+  composes: default-object-height from '../../styles/layout.css';
+  composes: input-search-form-submit from '../../styles/borders.css';
+  composes: icon-size-default from '../../styles/typography.css';
+}
+
+.formSubmit:focus { outline: none; }
+.formSubmit:hover { background-color: var(--icon-gray); }
+.formSubmit i { color: var(--text-gray); }
+
+.searchInputResults {
+  grid-column: 1/2; grid-row: 2/3;
+  composes: padding-big from '../../styles/layout.css';
+  composes: bg-almost-white from '../../styles/colors.css';
+  composes: search-input-results-shadow from '../../styles/base.css';
+}
+.searchInputResults li { cursor: default; }

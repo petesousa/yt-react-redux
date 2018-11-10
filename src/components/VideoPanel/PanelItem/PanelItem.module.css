@@ -1,0 +1,53 @@
+
+.card {
+  width: 160px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 94px 52px;
+}
+
+.cardHeader { grid-column: 1/2; grid-row: 1/2; }
+.cardMeta {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.reactLink { composes: default-link from '../../../styles/base.css'}
+
+.thumb {
+  width: 160px;
+  height: 90px;;
+  margin-bottom: 6px;
+}
+
+.videoTitle {
+  margin: 0;
+  font-size: 0.7em;
+}
+.videoTitle a {
+  color: var(--carbon);
+}
+
+.channelTitle, .statistics, .separator {
+  font-size: 0.7em;
+  display: inline-block;
+  color: var(--text-gray);
+}
+.separator { padding: 0 4px; }
+
+@media (min-width: 1080px) {
+  .card {
+    width: 210px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 124px 52px;
+  }
+
+  .thumb {
+    width: 210px;
+    height: 118px;;
+    margin-bottom: 6px;
+  }
+
+  .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.8em;}
+}

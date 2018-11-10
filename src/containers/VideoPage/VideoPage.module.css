@@ -1,0 +1,22 @@
+.relatedVideosList { padding: 0 12px; }
+
+@media (min-width: 1080px) {
+  .watchVideo {
+    padding: 24px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 0.9fr) repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 16px;
+  }
+
+  .videoDetailWrapper {
+    grid-column: 1/8;
+    grid-row-start: 1;
+  }
+
+  .relatedVideosList {
+    grid-column: 8/11;
+    grid-row-start: 1;
+  }
+}

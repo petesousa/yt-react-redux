@@ -1,0 +1,34 @@
+
+
+.videoPanelItemLoading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-gap: 6px;
+  margin-bottom: 12px;
+}
+
+.cardSmall,
+.cardBigResponsive {
+  background-color: var(--icon-gray);
+  width: 160px;
+  height: 90px;
+}
+
+.videoPanelMeta h3,
+.videoPanelMeta p {
+  height: 20px;
+  width: 180px;
+  background-color: var(--icon-gray);
+}
+
+.videoPanelMeta p { width: 124px; }
+
+@media (min-width: 1080px) {
+
+  .cardBigResponsive {
+    width: 246px;
+    height: 138px;
+  }
+
+}

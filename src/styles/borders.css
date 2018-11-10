@@ -1,0 +1,17 @@
+
+
+.input-search {
+  border: 1px solid var(--line-gray);
+  border-right: 0;
+  border-radius: .15rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.input-search-form-submit {
+  border-radius: .15rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid var(--line-gray);
+}

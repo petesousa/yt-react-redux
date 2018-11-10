@@ -1,0 +1,20 @@
+
+.default-link {
+  composes: text-gray from './colors.css';
+  font-weight: normal;
+}
+.react-link { composes: black from './colors.css'; }
+
+.default-link:hover,
+.react-link:link,
+.react-link:visited,
+.react-link:active,
+.react-link:focus,
+.react-link:hover { color: var(--black); cursor: pointer; }
+
+
+.search-input-results-shadow {
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(56,56,56,0.5);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(56,56,56,0.5);
+  box-shadow: 0px 1px 2px 0px rgba(56,56,56,0.5);
+}

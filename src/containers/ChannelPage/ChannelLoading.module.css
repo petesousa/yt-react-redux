@@ -1,0 +1,50 @@
+.channelHeaderLoading {
+  height: 70px;
+  background-color: var(--icon-gray);
+}
+
+.channelBannerLoading {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: grid;
+  grid-template-columns: 72px repeat(10, 1fr) 72px;
+}
+
+.channelAvatarLoadingWrapper {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+}
+
+.channelAvatarLoading {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--icon-gray);
+}
+
+.channelSubscribeLoadingWrapper {
+  grid-column: 11/12;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.channelSubscribeLoading {
+  height: 32px;
+  width: 140px;
+  background-color: var(--icon-gray);
+}
+
+@media (min-width: 1080px) {
+  .channelHeaderLoading { height: 237px; }
+  .channelAvatarLoading {
+    height: 80px;
+    width: 80px;
+  }
+  .channelSubscribeLoading {
+    height: 48px;
+    width: 210px;
+  }
+}

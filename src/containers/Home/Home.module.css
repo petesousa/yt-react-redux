@@ -1,0 +1,35 @@
+
+.home { padding: 12px; }
+
+.disclaimer {
+  color: var(--yt-red);
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+}
+
+@media (min-width: 1080px) {
+  .home {
+    padding: 24px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: 280px 100px auto;
+  }
+
+  .disclaimer {
+    padding: 24px 0;
+    grid-column: 2/10;
+    grid-row: 2/3;
+  }
+
+  .homePageBody {
+    grid-row-start: 3;
+    grid-column: 1/11;
+  }
+
+  .homePagePlaylistWrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

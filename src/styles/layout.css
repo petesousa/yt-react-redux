@@ -1,0 +1,32 @@
+
+/*  paddings  */
+.padding-zero { padding: 0; }
+.padding-small { padding: 4px; }
+.padding-mid { padding: 8px; }
+.padding-big { padding: 12px; }
+.padding-bigger { padding: 24px; }
+
+.padding-zero-big-top { composes: padding-zero; padding-top: 24px; }
+
+.padding-y-small { padding: 4px 0; }
+.padding-y-mid { padding: 8px 0; }
+.padding-y-big { padding: 12px 0; }
+.padding-y-bigger { padding: 24px 0; }
+
+.padding-x-small { padding: 0 4px; }
+.padding-x-mid { padding: 0 8px; }
+.padding-x-big { padding: 0 12px; }
+
+.padding-channel-page { padding: 12px 72px; }
+
+/* margins */
+.reset-margin { margin: 0; }
+.margin-bottom-biger { composes: reset-margin; margin-bottom: 24px; }
+
+/* widths */
+
+.full-width { width: 100%; }
+
+/* heights */
+
+.default-object-height { height: 32px; }

@@ -1,0 +1,26 @@
+.loadingVideosContainer {}
+
+.videoPanelLoading {}
+
+.videoPanelItemLoading {
+  display: grid;
+  grid-template-columns: 246px 1fr;
+  grid-template-rows: 138px;
+  grid-gap: 6px;
+  margin-bottom: 12px;
+}
+
+.videoPanelThumb {
+  background-color: var(--icon-gray);
+  width: 246px;
+  height: 138px;
+}
+
+.videoPanelMeta h3,
+.videoPanelMeta p {
+  height: 24px;
+  width: 210px;
+  background-color: var(--icon-gray);
+}
+
+.videoPanelMeta p { width: 162px; }

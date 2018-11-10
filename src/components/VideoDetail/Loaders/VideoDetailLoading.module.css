@@ -1,0 +1,118 @@
+
+/*  VideoPlayerLoading */
+.embedResponsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embedResponsive16By9 {
+  composes: embedResponsive;
+  padding-bottom: 56.25%;
+  margin-bottom: 12px;
+}
+
+.embedResponsiveItem {
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* VideoDetailHeaderLoading */
+
+.header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--icon-gray);
+  position: relative;
+  margin: 0;
+}
+.header { padding: 0 12px; }
+
+.title,
+.statistics {
+  height: 20px;
+  background-color: var(--icon-gray);
+}
+
+.title { width: 240px; }
+.statistics { width: 180px; }
+
+.headerMetaData { position: absolute; right: 12px; bottom: 0; }
+.ratingSpan {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: var(--icon-gray);
+}
+
+/* VideoDetailBodyLoading */
+
+.body { margin-bottom: 10px; border-bottom: 1px solid var(--icon-gray); }
+.body { padding: 12px; }
+
+.channelBannerLoading {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.channelAvatarLoadingWrapper { grid-column: 1/2; }
+
+.channelAvatarLoading {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--icon-gray);
+}
+
+.channelNameLoadingWrapper {
+  grid-column: 2/4;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.channelNameLoading {
+  height: 24px;
+  width: 140px;
+  margin-bottom: 0;
+  background-color: var(--icon-gray);
+}
+
+.channelSubscribeLoadingWrapper {
+  grid-column: 10/11;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.channelSubscribeLoading {
+  height: 28px;
+  width: 120px;
+  background-color: var(--icon-gray);
+}
+
+
+.about {padding: 0; font-size: 0.85em;}
+.description {
+  height: 18px;
+  margin-bottom: 6px;
+  background-color: var(--icon-gray);
+}
+
+@media (min-width: 1080px) {
+  .body { padding: 0; }
+  .header { padding: 0; }
+  .headerMetaData { position: absolute; right: 0px; bottom: 0; }
+}

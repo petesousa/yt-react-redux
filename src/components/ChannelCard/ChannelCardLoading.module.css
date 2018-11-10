@@ -1,0 +1,63 @@
+
+
+
+  .channelCardLoading {
+    width: 100%;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: minmax(max-content, 160px) auto;
+    grid-template-rows: auto;
+  }
+
+  .avatarWrapper {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .avatar {
+    background-color: var(--icon-gray);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .metaDataWrapper {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+    padding: 0 6px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .title, .statistics, .about {
+    height: 20px;
+    background-color: var(--icon-gray);
+  }
+
+  .title { width: 90px; }
+  .statistics { width: 128px; }
+  .about { width: 180px; }
+
+@media (min-width: 1080px) {
+
+  .channelCardLoading {
+    display: grid;
+    grid-template-columns: minmax(max-content, 246px) auto;
+    grid-template-rows: auto;
+  }
+
+  .avatar {
+    width: 136px;
+    height: 136px;
+  }
+
+  .title { width: 120px; }
+  .statistics { width: 248px; }
+  .about { width: 360px; }
+}

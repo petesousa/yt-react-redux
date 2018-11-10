@@ -1,0 +1,43 @@
+
+.playlistHeader {
+  display: grid;
+  grid-template-columns: 214px 176px;
+  grid-template-rows: 107px 107px;
+  overflow: hidden;
+}
+
+.mainThumbWrapper {
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  display: inline-block;
+}
+
+.sideThumbsWrapper {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: inline-block;
+}
+
+.mainThumbWrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.sideThumbsWrapper img {
+  height: 105px;
+  display: block;
+  margin: 1px 0;
+  margin-left: 2px;
+}
+
+.playlistItems {display: none;}
+
+
+
+@media (min-width: 1080px) {
+    .playlistItems {
+      margin-top: 12px;
+      display: block;
+    }
+}

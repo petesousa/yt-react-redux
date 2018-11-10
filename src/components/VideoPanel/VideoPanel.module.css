@@ -1,0 +1,18 @@
+
+.videoPanelContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  grid-gap: 4px;
+  border-bottom: 1px solid var(--icon-gray);
+  margin-bottom: 28px;
+}
+
+@media (min-width: 1080px) {
+  .videoPanelContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 210px);
+    grid-gap: 4px;
+    border-bottom: 1px solid var(--icon-gray);
+    margin-bottom: 28px;
+  }
+}

@@ -1,0 +1,26 @@
+/*  RESET  */
+*, ::after, ::before { -webkit-box-sizing: inherit; box-sizing: inherit; }
+html { text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+body, ul, li, p { padding: 0; margin: 0; }
+h1, h2, h3, h4, h5, h6 { padding: 0; margin: 0; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 6px; font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button { border: none; }
+button:focus { outline: none; }
+img { border: 0; vertical-align: middle; }
+ul { list-style: none; }
+div { box-sizing: border-box; }
+a { text-decoration: none; }
+
+/*  ABOVE APP COMPONENT  */
+html { font-size: medium; background-color: var(--bg-gray); }
+
+/*  APP COMPONENT  */
+.mainContainer {
+  composes: roboto from './styles/typography.css';
+  composes: carbon from './styles/colors.css';
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px auto;
+}
+.appMain { grid-column: 1/2; grid-row-start: 2; }
