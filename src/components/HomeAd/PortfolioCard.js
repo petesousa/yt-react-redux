@@ -13,7 +13,7 @@ const PortfolioCard = () => {
         <div className={styles.cardMetaData}>
           <h4>PEDRO HENRIQUE SOUSA</h4>
           <h6>Web Developer</h6>
-          <a href="http://petesousa.xyz" className={styles.getInTouch}>GET IN TOUCH</a>
+          <a href="https://petesousa-portfolio-app.firebaseapp.com/" className={styles.getInTouch}>GET IN TOUCH</a>
         </div>
       </div>
     </div>
