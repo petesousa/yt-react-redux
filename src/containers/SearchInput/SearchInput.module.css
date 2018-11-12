@@ -6,7 +6,7 @@
 
 .searchInput {
   grid-column: 1/2; grid-row: 1/2;
-  composes: text-size-default from '../../styles/typography.css';
+  font-size: 0.8em;
   composes: default-object-height padding-x-big from '../../styles/layout.css';
   composes: input-search from '../../styles/borders.css';
 }
@@ -31,8 +31,14 @@
 
 .searchInputResults {
   grid-column: 1/2; grid-row: 2/3;
-  composes: padding-big from '../../styles/layout.css';
+  padding: 6px;
   composes: bg-almost-white from '../../styles/colors.css';
   composes: search-input-results-shadow from '../../styles/base.css';
 }
 .searchInputResults li { cursor: default; }
+
+@media (min-width: 1080px) {
+  .searchInput {
+    composes: text-size-default from '../../styles/typography.css';
+  }
+}

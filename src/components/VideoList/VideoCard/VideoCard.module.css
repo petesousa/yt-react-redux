@@ -22,25 +22,25 @@
 .reactLink { composes: default-link from '../../../styles/base.css'}
 
 .thumb { width: var(--small-thumb-width); height: var(--small-thumb-height); }
-.videoTitle { overflow: hidden; margin: 0;}
+.videoTitle { overflow: hidden; margin: 0; }
 .videoTitle a { color: var(--carbon); }
 .channelTitle, .statistics, .separator { color: var(--text-gray); }
 .separator { padding: 0 4px; }
 .about { display: none; }
 
 .cardLightBigResponsive h1,
-.cardFullBigResponsive h1 { font-size: 1em; }
+.cardFullBigResponsive h1 { font-size: 0.7em; }
 
 .cardFullBigResponsive h2,
 .cardLightBigResponsive h2,
 .cardFullBigResponsive h3,
 .cardLightBigResponsive h3,
 .cardFullBigResponsive span,
-.cardLightBigResponsive span { font-size: 0.86em; display: inline-block; }
+.cardLightBigResponsive span { font-size: 0.62em; display: inline-block; }
 
-.cardLightSmall h1 { font-size: 0.96em; max-height: 35%; overflow: hidden; }
+.cardLightSmall h1 { font-size: 0.7em; }
 .cardLightSmall h2,
-.cardLightSmall h3 { font-size: 0.84em; margin: 0; margin-bottom: 4px; }
+.cardLightSmall h3 { font-size: 0.62em; margin: 0; margin-bottom: 4px; }
 .cardLightSmall span { display: none; }
 .cardLightSmall p { display: none; }
 
@@ -58,11 +58,22 @@
     height: var(--big-thumb-height);
   }
 
-  .cardFullBigResponsive h1,
-  .cardLightBigResponsive h1 { font-size: 1.2em; }
-
   .about { display: block; font-size: 0.84em; }
 
 }
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+  .cardLightBigResponsive h1,
+  .cardFullBigResponsive h1 { font-size: 0.78em; }
+
+  .cardFullBigResponsive h2,
+  .cardLightBigResponsive h2,
+  .cardFullBigResponsive h3,
+  .cardLightBigResponsive h3,
+  .cardFullBigResponsive span,
+  .cardLightBigResponsive span { font-size: 0.62em; display: inline-block; }
+
+  .cardLightSmall h1 { font-size: 0.78em; }
+  .cardLightSmall h2,
+  .cardLightSmall h3 { font-size: 0.62em; margin: 0; margin-bottom: 4px; }
+}

@@ -1,7 +1,7 @@
 
 .channelBannerImage {
   width: 100%;
-  min-height: 237px;
+  min-height: 48px;
   background-color: var(--icon-gray);
 }
 .channelCardWrapper,
@@ -10,6 +10,9 @@
 }
 
 @media (min-width: 1080px) {
+
+  .channelBannerImage { min-height: 237px; }
+
   .channelCardWrapper,
   .channelBody {
     max-width: 1280px;

@@ -2,7 +2,7 @@
 
 @media (min-width: 1080px) {
   .watchVideo {
-    padding: 24px;
+    padding: 24px 64px;
 
     display: grid;
     grid-template-columns: repeat(7, 0.9fr) repeat(3, 1fr);
@@ -18,5 +18,17 @@
   .relatedVideosList {
     grid-column: 8/11;
     grid-row-start: 1;
+  }
+}
+
+@media (min-width: 1280px) { .watchVideo { padding: 24px 72px; } }
+
+@media (min-width: 1440px) {
+  .watchVideo {
+    padding: 24px 96px;
+    display: grid;
+    grid-template-columns: repeat(7, 1.3fr) repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 16px;
   }
 }

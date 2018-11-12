@@ -34,19 +34,19 @@ video {
 .header,
 .body { margin-bottom: 10px; border-bottom: 1px solid var(--icon-gray); }
 .header { position: relative; padding: 0 12px; margin: 0; }
-.title { font-size: 1.1em; margin: 0; }
+.title { font-size: 0.78em; margin: 0; }
 .statistics {
   color: var(--text-gray);
   padding: 8px 0;
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin: 0;
 }
-.headerMetaData { position: absolute; right: 0; bottom: 0; }
+.headerMetaData { position: absolute; right: 12px; bottom: 0; }
 .ratingSpan {
   display: inline-block;
   height: 100%;
   color: var(--text-gray);
-  font-size: 0.9em;
+  font-size: 0.7em;
   padding: 0 8px;
   border-bottom: 2px solid var(--text-gray);
 }
@@ -61,11 +61,25 @@ video {
 .categoryLabel { display: inline-block; width: 140px; color: var(--text-gray); }
 .categoryLink { color: var(--link-blue); font-weight: bold;}
 
-@media (min-width: 918px) {
+@media (min-width: 1080px) {
 
-  .header { padding: 0; }
-  .statistics,
-  .ratingSpan { font-size: 0.9em; }
+  .header { position: relative; padding: 0; margin: 0; }
+  .title { font-size: 1em; }
+  .statistics {
+    color: var(--text-gray);
+    padding: 8px 0;
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .headerMetaData { position: absolute; right: 0; bottom: 0; }
+  .ratingSpan {
+    display: inline-block;
+    height: 100%;
+    color: var(--text-gray);
+    font-size: 0.8em;
+    padding: 0 8px;
+    border-bottom: 2px solid var(--text-gray);
+  }
 
   .body { padding: 12px 0; }
   .about {padding-left: 64px; font-size: 0.95em;}

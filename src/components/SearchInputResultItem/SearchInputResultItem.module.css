@@ -1,4 +1,10 @@
 
+li { font-size: 0.7em; }
+
 .resultSelected { background-color: var(--icon-gray); }
 
 .reactLink { color: var(--carbon); }
+
+@media (min-width: 1080px) {
+  li { font-size: 0.9em; }
+}
