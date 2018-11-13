@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-// import { formatCounters } from '../../helpers'
 
 import ChannelCard from '../ChannelCard/ChannelCard'
 
@@ -11,8 +8,7 @@ const VideoDetailBody = (props) => {
   const {
     channel,
     publishedAt,
-    description,
-    category } = props
+    description } = props
   const d = new Date(publishedAt).toString().split(" ")
   const datePublished = `${d[1]} ${d[2]}, ${d[3]}`
   const channelCardOptionalParams = { data: `Publised on ${datePublished}`}
@@ -27,12 +23,6 @@ const VideoDetailBody = (props) => {
 
       <div className={styles.about}>
         <p className={styles.description}>{description}</p>
-        <h4 className={styles.categoryLabel}>Category</h4>
-        <Link className={styles.reactLink} to={`/channel/${category.channelId}`}>
-          <span className={styles.categoryLink}>
-            {category.title}
-          </span>
-        </Link>
       </div>
     </div>
   )

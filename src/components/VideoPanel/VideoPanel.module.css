@@ -1,10 +1,21 @@
 
 .videoPanelContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 160px);
+  grid-template-columns: repeat(auto-fit, 128px);
   grid-gap: 4px;
   border-bottom: 1px solid var(--icon-gray);
   margin-bottom: 28px;
+}
+
+
+@media (min-width: 360px) {
+  .videoPanelContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 160px);
+    grid-gap: 4px;
+    border-bottom: 1px solid var(--icon-gray);
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: 1080px) {

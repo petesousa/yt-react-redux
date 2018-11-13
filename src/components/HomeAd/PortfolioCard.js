@@ -11,8 +11,8 @@ const PortfolioCard = () => {
           <div className={styles.cardAvatar}></div>
         </div>
         <div className={styles.cardMetaData}>
-          <h4>PEDRO HENRIQUE SOUSA</h4>
-          <h6>Web Developer</h6>
+          <h1>PETE SOUSA</h1>
+          <h2>Web Developer</h2>
           <a href="https://petesousa-portfolio-app.firebaseapp.com/" className={styles.getInTouch}>GET IN TOUCH</a>
         </div>
       </div>

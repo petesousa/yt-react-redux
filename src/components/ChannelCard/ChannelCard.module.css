@@ -57,13 +57,12 @@
   overflow: hidden;
 }
 
-.title { font-size: 0.8em; }
+
 .title a { color: var(--carbon); }
-.statistics, .optParams { font-size: 0.64em; color: var(--text-gray); }
+.statistics, .optParams { color: var(--text-gray); }
 .title, .statistics, .optParams { margin-bottom: 2px; }
 
 .about {
-  font-size: 0.6em;
   color: var(--text-gray);
   width: 380px;
   display: none;
@@ -71,7 +70,6 @@
 
 .cardHeader h2,
 .cardHeader p { display: none; }
-
 .cardFull button { display: none; }
 
 .subscribeButtonWrapper {
@@ -87,10 +85,17 @@
   color: var(--white);
   background-color: var(--text-gray);
   padding: 8px 12px;
-  font-size: 0.7em;
   outline: none;
   border: none;
   font-weight: 300;
+}
+
+.title { font-size: 0.7em; }
+.statistics, .optParams, .about, .subscribeButton { font-size: 0.6em; }
+
+@media (min-width: 360px) {
+  .title { font-size: 0.8em; }
+  .statistics, .optParams, .about, .subscribeButton { font-size: 0.7em; }
 }
 
 @media (min-width: 1080px) {

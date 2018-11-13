@@ -1,12 +1,15 @@
 
-.home { padding: 12px; }
+.home {}
 
 .disclaimer {
+  padding: 12px;
   color: var(--yt-red);
   text-align: center;
   font-weight: bold;
-  padding: 12px;
+  font-size: 0.8em;
 }
+
+.homePageBody { padding: 12px; }
 
 @media (min-width: 1080px) {
   .home {
@@ -18,6 +21,7 @@
   }
 
   .disclaimer {
+    font-size: 1em;
     padding: 24px 0;
     grid-column: 2/10;
     grid-row: 2/3;

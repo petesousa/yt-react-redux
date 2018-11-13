@@ -55,7 +55,7 @@ video {
 
 .body { padding: 12px; }
 .about {padding: 0; font-size: 0.85em;}
-.description {white-space: pre-line; font-size: 0.9em;}
+.description { white-space: pre-line; font-size: 0.9em;}
 .categoryLabel,
 .categoryLink { padding: 12px 0; font-size: 0.9em; }
 .categoryLabel { display: inline-block; width: 140px; color: var(--text-gray); }

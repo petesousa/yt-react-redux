@@ -11,6 +11,7 @@ img { border: 0; vertical-align: middle; }
 ul { list-style: none; }
 div { box-sizing: border-box; }
 a { text-decoration: none; }
+p { word-break: break-word; }
 
 /*  ABOVE APP COMPONENT  */
 html { font-size: medium; background-color: var(--bg-gray); }
@@ -20,7 +21,10 @@ html { font-size: medium; background-color: var(--bg-gray); }
   composes: roboto from './styles/typography.css';
   composes: carbon from './styles/colors.css';
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100vw;
   grid-template-rows: 56px auto;
 }
-.appMain { grid-column: 1/2; grid-row-start: 2; }
+.appMain {
+  grid-column: 1/2;
+  grid-row-start: 2;
+}

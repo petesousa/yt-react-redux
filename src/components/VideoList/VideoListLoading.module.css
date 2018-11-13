@@ -11,18 +11,36 @@
 .cardSmall,
 .cardBigResponsive {
   background-color: var(--icon-gray);
-  width: 160px;
-  height: 90px;
+  width: 128px;
+  height: 72px;
 }
 
 .videoPanelMeta h3,
 .videoPanelMeta p {
   height: 20px;
-  width: 180px;
+  width: 120px;
   background-color: var(--icon-gray);
 }
 
-.videoPanelMeta p { width: 124px; }
+.videoPanelMeta p { width: 96px; }
+
+@media (min-width: 360px) {
+  .cardSmall,
+  .cardBigResponsive {
+    background-color: var(--icon-gray);
+    width: 160px;
+    height: 90px;
+  }
+
+  .videoPanelMeta h3,
+  .videoPanelMeta p {
+    height: 20px;
+    width: 180px;
+    background-color: var(--icon-gray);
+  }
+
+  .videoPanelMeta p { width: 124px; }
+}
 
 @media (min-width: 1080px) {
 
