@@ -16,7 +16,7 @@ const PortfolioCard = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://petesousa.xyz/"
+            href="http://petesousa.xyz/"
             className={styles.getInTouch}>GET IN TOUCH</a>
         </div>
       </div>
