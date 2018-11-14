@@ -1,7 +1,4 @@
 
-
-
-
 .card {
   width: 128px;
   display: grid;
@@ -10,36 +7,23 @@
 }
 
 .cardHeader { grid-column: 1/2; grid-row: 1/2; }
-.cardMeta {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
+.cardMeta { grid-column: 1/2; grid-row: 2/3; }
 
-.reactLink { composes: default-link from '../../../styles/base.css'}
+.reactLink { composes: default-link from '../../../styles/base.css' }
+.thumb { composes: video-thumb-default from '../../../styles/figures.css' }
 
-.thumb {
-  width: 128px;
-  height: 72px;
-  margin-bottom: 6px;
-}
-
-.videoTitle {
-  margin: 0;
-  font-size: 0.64em;
-}
-.videoTitle a {
-  color: var(--carbon);
-}
-
-.channelTitle, .statistics, .separator {
+.videoTitle, .channelTitle, .statistics, .separator {
   font-size: 0.6em;
   display: inline-block;
   color: var(--text-gray);
 }
+
+.videoTitle { margin: 0; }
+.videoTitle a { color: var(--carbon); }
+
 .separator { padding: 0 4px; }
 
 @media (min-width: 360px) {
-
   .card {
     width: 160px;
     display: grid;
@@ -47,36 +31,7 @@
     grid-template-rows: 94px 52px;
   }
 
-  .cardHeader { grid-column: 1/2; grid-row: 1/2; }
-  .cardMeta {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .reactLink { composes: default-link from '../../../styles/base.css'}
-
-  .thumb {
-    width: 160px;
-    height: 90px;;
-    margin-bottom: 6px;
-  }
-
-  .videoTitle {
-    margin: 0;
-    font-size: 0.7em;
-  }
-  .videoTitle a {
-    color: var(--carbon);
-  }
-
-  .channelTitle, .statistics, .separator {
-    font-size: 0.7em;
-    display: inline-block;
-    color: var(--text-gray);
-  }
-  .separator { padding: 0 4px; }
-
-
+  .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.7em; }
 }
 
 @media (min-width: 1080px) {
@@ -85,12 +40,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 124px 52px;
-  }
-
-  .thumb {
-    width: 210px;
-    height: 118px;;
-    margin-bottom: 6px;
   }
 
   .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.8em;}
