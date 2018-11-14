@@ -1,9 +1,14 @@
 
+:root {
+  --card-default-width: 128px;
+  --card-default-height: 76px;
+}
+
 .card {
-  width: 128px;
+  width: var(--card-default-width);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 76px 52px;
+  grid-template-rows: var(--card-default-height) 52px;
 }
 
 .cardHeader { grid-column: 1/2; grid-row: 1/2; }
@@ -13,10 +18,11 @@
 .thumb { composes: video-thumb-default from '../../../styles/figures.css' }
 
 .videoTitle, .channelTitle, .statistics, .separator {
-  font-size: 0.6em;
   display: inline-block;
   color: var(--text-gray);
 }
+
+.videoTitle, .channelTitle, .statistics, .separator { font-size: 0.6em; }
 
 .videoTitle { margin: 0; }
 .videoTitle a { color: var(--carbon); }
@@ -24,22 +30,18 @@
 .separator { padding: 0 4px; }
 
 @media (min-width: 360px) {
-  .card {
-    width: 160px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 94px 52px;
+  :root {
+    --card-default-width: 160px;
+    --card-default-height: 94px;
   }
 
   .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.7em; }
 }
 
 @media (min-width: 1080px) {
-  .card {
-    width: 210px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 124px 52px;
+  :root {
+    --card-default-width: 210px;
+    --card-default-height: 124px;
   }
 
   .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.8em;}
