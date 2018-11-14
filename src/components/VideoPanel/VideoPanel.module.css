@@ -1,18 +1,9 @@
 
-:root { --video-panel-card-size: 128px; }
-
 .videoPanelContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, var(--video-panel-card-size));
+  grid-template-columns: repeat(auto-fit, var(--video-panel-card-width));
   grid-gap: 4px;
   border-bottom: 1px solid var(--icon-gray);
-  margin-bottom: 28px;
-}
-
-@media (min-width: 360px) {
-  :root { --video-panel-card-size: 160px; }
-}
-
-@media (min-width: 1080px) {
-  :root { --video-panel-card-size: 210px; }
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }

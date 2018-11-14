@@ -1,11 +1,9 @@
 
 .loadingVideosContainer { max-width: 1280px; margin: 0 auto; }
 
-:root { --video-panel-card-size: 128px; }
-
 .videoPanelLoading {
   display: grid;
-  grid-template-columns: repeat(auto-fit, var(--video-panel-card-size));
+  grid-template-columns: repeat(auto-fit, var(--video-panel-card-width));
   grid-gap: 4px;
   border-bottom: 1px solid var(--icon-gray);
   padding-bottom: 12px;
@@ -15,15 +13,5 @@
 .videoPanelItemLoading { margin-bottom: 16px; }
 
 .videoPanelThumb { composes: video-thumb-default from '../../styles/figures.css' }
-
 .videoPanelTitle { composes: video-title-default from '../../styles/figures.css'; }
-
 .videoPanelParagraph { composes: video-paragraph-default from '../../styles/figures.css'; }
-
-@media (min-width: 360px) {
-  :root { --video-panel-card-size: 160px; }
-}
-
-@media (min-width: 1080px) {
-  :root { --video-panel-card-size: 210px; }
-}

@@ -1,14 +1,9 @@
 
-:root {
-  --card-default-width: 128px;
-  --card-default-height: 76px;
-}
-
 .card {
-  width: var(--card-default-width);
+  width: var(--video-panel-card-width);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: var(--card-default-height) 52px;
+  grid-template-rows: var(--video-panel-card-height) auto;
 }
 
 .cardHeader { grid-column: 1/2; grid-row: 1/2; }
@@ -17,32 +12,16 @@
 .reactLink { composes: default-link from '../../../styles/base.css' }
 .thumb { composes: video-thumb-default from '../../../styles/figures.css' }
 
-.videoTitle, .channelTitle, .statistics, .separator {
+.videoTitle,
+.channelTitle,
+.statistics,
+.separator { composes: video-panel-card-text from '../../../styles/typography.css' }
+
+.channelTitle, .statistics, .separator {
   display: inline-block;
   color: var(--text-gray);
 }
 
-.videoTitle, .channelTitle, .statistics, .separator { font-size: 0.6em; }
-
-.videoTitle { margin: 0; }
 .videoTitle a { color: var(--carbon); }
 
 .separator { padding: 0 4px; }
-
-@media (min-width: 360px) {
-  :root {
-    --card-default-width: 160px;
-    --card-default-height: 94px;
-  }
-
-  .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.7em; }
-}
-
-@media (min-width: 1080px) {
-  :root {
-    --card-default-width: 210px;
-    --card-default-height: 124px;
-  }
-
-  .videoTitle, .channelTitle, .statistics, .separator { font-size: 0.8em;}
-}

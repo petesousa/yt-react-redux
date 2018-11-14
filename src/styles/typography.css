@@ -1,6 +1,24 @@
 
 .roboto { font-family: 'Roboto', sans-serif; }
-
 .text-size-default { font-size: 1em; }
-
 .icon-size-default { font-size: 0.9em; }
+
+
+.card-text {
+  vertical-align: top;
+  margin-bottom: 4px;
+
+}
+
+.video-panel-card-text {
+  composes: card-text;
+  font-size: 0.6em;
+}
+
+@media (min-width: 360px) {
+  .video-panel-card-text { font-size: 0.7em; }
+}
+
+@media (min-width: 1080px) {
+  .video-panel-card-text { font-size: 0.8em; }
+}

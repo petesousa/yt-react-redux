@@ -11,6 +11,8 @@
 
 .homePageBody { padding: 12px; }
 
+.playlistTitle { font-size: 1em; }
+
 @media (min-width: 1080px) {
   .home {
     padding: 24px;
@@ -36,4 +38,7 @@
     max-width: 1280px;
     margin: 0 auto;
   }
+
+  .playlistTitle { font-size: 1.2em; }
+
 }
