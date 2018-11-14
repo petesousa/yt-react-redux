@@ -1,92 +1,29 @@
 
-.loadingVideosContainer {
-  padding-top: 24px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
+.loadingVideosContainer { max-width: 1280px; margin: 0 auto; }
+
+:root { --video-panel-card-size: 128px; }
 
 .videoPanelLoading {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 128px);
+  grid-template-columns: repeat(auto-fit, var(--video-panel-card-size));
   grid-gap: 4px;
-
+  border-bottom: 1px solid var(--icon-gray);
+  padding-bottom: 12px;
+  margin-bottom: 28px;
 }
 
-.videoPanelItemLoading {
-  margin-bottom: 16px;
-}
+.videoPanelItemLoading { margin-bottom: 16px; }
 
+.videoPanelThumb { composes: video-thumb-default from '../../styles/figures.css' }
 
-.videoPanelThumb {
-  background-color: var(--icon-gray);
-  width: 128px;
-  height: 72px;
-}
+.videoPanelTitle { composes: video-title-default from '../../styles/figures.css'; }
 
-.videoPanelMeta h3,
-.videoPanelMeta p {
-  height: 20px;
-  margin-top: 8px;
-  width: 128px;
-  background-color: var(--icon-gray);
-}
-
-.videoPanelMeta p { width: 104px; }
+.videoPanelParagraph { composes: video-paragraph-default from '../../styles/figures.css'; }
 
 @media (min-width: 360px) {
-
-  .videoPanelLoading {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 160px);
-    grid-gap: 4px;
-
-  }
-
-  .videoPanelItemLoading {
-    margin-bottom: 16px;
-  }
-
-
-  .videoPanelThumb {
-    background-color: var(--icon-gray);
-    width: 160px;
-    height: 90px;
-  }
-
-  .videoPanelMeta h3,
-  .videoPanelMeta p {
-    height: 24px;
-    margin-top: 8px;
-    width: 160px;
-    background-color: var(--icon-gray);
-  }
-
-  .videoPanelMeta p { width: 118px; }
-
+  :root { --video-panel-card-size: 160px; }
 }
 
 @media (min-width: 1080px) {
-  .videoPanelLoading {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 210px);
-    grid-gap: 4px;
-    padding-bottom: 32px;
-    width: 1080px;
-    margin: 0 auto;
-
-  }
-
-
-  .videoPanelThumb {
-    height: 118px;
-    width: 210px;
-  }
-
-  .videoPanelMeta h3,
-  .videoPanelMeta p {
-    width: 210px;
-  }
-
-  .videoPanelMeta p { width: 162px; }
+  :root { --video-panel-card-size: 210px; }
 }

@@ -3,13 +3,16 @@ import React from 'react'
 import styles from './VideoListLoading.module.css'
 
 const VideoListLoading = ({ thumbSize }) => {
+  let n = 14
+  const items = Array.apply(null, {length: n}).map(Function.call, Math.random)
+
   const cardClass = `card${thumbSize}`
   return (
     <div className={styles.loadingVideosContainer}>
       <ul className={styles.videoPanelLoading}>
-        { [1,2,3,4,5,6,7,8,9,1,12,13,14].map((line) => {
+        { items.map((x, index) => {
           return (
-            <li key={line} className={styles.videoPanelItemLoading}>
+            <li key={x+index} className={styles.videoPanelItemLoading}>
             <div className={styles[cardClass]}></div>
             <div className={styles.videoPanelMeta}>
             <h3> </h3>

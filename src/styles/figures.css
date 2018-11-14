@@ -1,0 +1,25 @@
+
+.loading-figure {
+  background-color: var(--icon-gray);
+  margin-bottom: 4px;
+}
+
+.video-thumb-default,
+.video-title-default,
+.video-paragraph-default { composes: loading-figure; }
+
+.video-thumb-default { width: 128px; height: 72px; }
+.video-title-default { width: 128px; height: 18px; }
+.video-paragraph-default { width: 72px; height: 18px; }
+
+@media (min-width: 360px) {
+  .video-thumb-default { width: 160px; height: 90px; }
+  .video-title-default { width: 160px; height: 20px; }
+  .video-paragraph-default { width: 128px; height: 20px; }
+}
+
+@media (min-width: 1080px) {
+  .video-thumb-default { width: 210px; height: 118px; }
+  .video-title-default { width: 210px; height: 22px; }
+  .video-paragraph-default { width: 160px; height: 22px; }
+}
