@@ -11,7 +11,7 @@
 
 .homePageBody { padding: 12px; }
 
-.playlistTitle { font-size: 1em; }
+.playlistTitle { composes: section-title from '../../styles/typography.css' }
 
 @media (min-width: 1080px) {
   .home {
@@ -38,7 +38,5 @@
     max-width: 1280px;
     margin: 0 auto;
   }
-
-  .playlistTitle { font-size: 1.2em; }
 
 }

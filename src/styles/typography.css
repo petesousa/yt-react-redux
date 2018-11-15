@@ -4,6 +4,8 @@
 .icon-size-default { font-size: 0.9em; }
 
 
+.section-title { font-size: 1em; }
+
 .card-text {
   vertical-align: top;
   margin-bottom: 4px;
@@ -16,9 +18,11 @@
 }
 
 @media (min-width: 360px) {
+  .section-title { font-size: 1.1em; }
   .video-panel-card-text { font-size: 0.7em; }
 }
 
 @media (min-width: 1080px) {
+  .section-title { font-size: 1.2em; }
   .video-panel-card-text { font-size: 0.8em; }
 }

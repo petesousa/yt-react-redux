@@ -1,50 +1,33 @@
 .channelHeaderLoading {
-  height: 70px;
-  background-color: var(--icon-gray);
+  composes: channel-loading-header-default from '../../styles/figures.css';
 }
 
 .channelBannerLoading {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 12px 0;
+  padding: 12px;
+
   display: grid;
-  grid-template-columns: 72px repeat(10, 1fr) 72px;
+  grid-template-columns: var(--avatar-default-size) auto var(--button-subscribe-default-width);
 }
 
 .channelAvatarLoadingWrapper {
-  grid-column: 2/3;
+  grid-column: 1/2;
   display: flex;
   justify-content: center;
 }
 
 .channelAvatarLoading {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: var(--icon-gray);
+  composes: avatar-figure from '../../styles/figures.css';
 }
 
 .channelSubscribeLoadingWrapper {
-  grid-column: 11/12;
+  grid-column: 3/4;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .channelSubscribeLoading {
-  height: 32px;
-  width: 140px;
-  background-color: var(--icon-gray);
-}
-
-@media (min-width: 1080px) {
-  .channelHeaderLoading { height: 237px; }
-  .channelAvatarLoading {
-    height: 80px;
-    width: 80px;
-  }
-  .channelSubscribeLoading {
-    height: 48px;
-    width: 210px;
-  }
+  composes: subscribe-button-default from '../../styles/figures.css';
 }

@@ -1,7 +1,7 @@
 
 .channelBannerImage {
   width: 100%;
-  min-height: 48px;
+  height: auto;
   background-color: var(--icon-gray);
 }
 .channelCardWrapper,
@@ -9,9 +9,9 @@
   padding: 12px;
 }
 
-@media (min-width: 1080px) {
+.playlistTitle { composes: section-title from '../../styles/typography.css' }
 
-  .channelBannerImage { min-height: 237px; }
+@media (min-width: 1080px) {
 
   .channelCardWrapper,
   .channelBody {

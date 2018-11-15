@@ -2,11 +2,24 @@
 :root {
   --video-panel-card-width: 128px;
   --video-panel-card-height: 76px;
+
+  --avatar-default-size: 48px;
+
+  --button-subscribe-default-width: 140px;
+  --button-subscribe-default-height: 32px;
+
+  --channel-loading-header-height: calc(100vw / 5);
 }
 
 .loading-figure {
   background-color: var(--icon-gray);
-  margin-bottom: 4px;
+}
+
+.avatar-figure {
+  composes: loading-figure;
+  height: var(--avatar-default-size);
+  width: var(--avatar-default-size);
+  border-radius: 50%;
 }
 
 .video-thumb-default,
@@ -17,11 +30,30 @@
 .video-title-default { width: 128px; height: 18px; }
 .video-paragraph-default { width: 72px; height: 18px; }
 
+
+.channel-loading-header-default {
+  composes: loading-figure;
+  height: var(--channel-loading-header-height);
+}
+
+.subscribe-button-default {
+  composes: loading-figure;
+  width: var(--button-subscribe-default-width);
+  height: var(--button-subscribe-default-height);
+}
+
 @media (min-width: 360px) {
 
   :root {
     --video-panel-card-width: 160px;
     --video-panel-card-height: 94px;
+
+    --avatar-default-size: 64px;
+
+    --button-subscribe-default-width: 180px;
+    --button-subscribe-default-height: 40px;
+
+    --channel-loading-header-height: calc(100vw / 6);
   }
 
   .video-thumb-default { width: 160px; height: 90px; }
@@ -34,6 +66,13 @@
   :root {
     --video-panel-card-width: 210px;
     --video-panel-card-height: 124px;
+
+    --avatar-default-size: 80px;
+
+    --button-subscribe-default-width: 210px;
+    --button-subscribe-default-height: 48px;
+
+    --channel-loading-header-height: calc(100vw / 7);
   }
 
   .video-thumb-default { width: 210px; height: 118px; }
