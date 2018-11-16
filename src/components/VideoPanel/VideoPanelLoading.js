@@ -12,7 +12,9 @@ const VideoPanelLoading = () => {
     <div className={styles.loadingVideosContainer}>
       { lists.map((x, index) => {
         return (
-          <ul key={x+index} className={styles.videoPanelLoading}>
+          <div>
+            <h1 className={styles.videoPanelHeadingLoading} > </h1>
+            <ul key={x+index} className={styles.videoPanelLoading}>
             { items.map((x, index) => {
               return (
                 <li key={x+index} className={styles.videoPanelItemLoading}>
@@ -24,7 +26,8 @@ const VideoPanelLoading = () => {
                 </li>
               )
             }) }
-          </ul>
+            </ul>
+          </div>
         )
       }) }
     </div>

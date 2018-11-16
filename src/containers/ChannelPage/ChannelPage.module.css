@@ -4,18 +4,12 @@
   height: auto;
   background-color: var(--icon-gray);
 }
+
 .channelCardWrapper,
 .channelBody {
   padding: 12px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .playlistTitle { composes: section-title from '../../styles/typography.css' }
-
-@media (min-width: 1080px) {
-
-  .channelCardWrapper,
-  .channelBody {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-}

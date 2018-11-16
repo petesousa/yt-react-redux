@@ -1,7 +1,7 @@
 
 .videoPanelContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, var(--video-panel-card-width));
+  grid-template-columns: repeat(auto-fit, var(--panel-thumb-default-width));
   grid-gap: 4px;
   border-bottom: 1px solid var(--icon-gray);
   padding-bottom: 20px;

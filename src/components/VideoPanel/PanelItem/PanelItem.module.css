@@ -1,16 +1,18 @@
 
 .card {
-  width: var(--video-panel-card-width);
+  width: var(--panel-thumb-default-width);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: var(--video-panel-card-height) auto;
+  grid-template-rows: var(--panel-thumb-default-height) auto;
 }
 
 .cardHeader { grid-column: 1/2; grid-row: 1/2; }
 .cardMeta { grid-column: 1/2; grid-row: 2/3; }
 
 .reactLink { composes: default-link from '../../../styles/base.css' }
-.thumb { composes: video-thumb-default from '../../../styles/figures.css' }
+.thumb { composes: panel-thumb-default from '../../../styles/figures.css' }
+
+.videoTitle { margin-top: 4px; }
 
 .videoTitle,
 .channelTitle,

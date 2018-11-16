@@ -1,43 +1,62 @@
 
 :root {
-  --video-panel-card-width: 128px;
-  --video-panel-card-height: 76px;
-
+  --panel-thumb-default-width: 128px;
+  --panel-thumb-default-height: 72px;
+  --card-text-height: 18px;
   --avatar-default-size: 48px;
-
   --button-subscribe-default-width: 140px;
   --button-subscribe-default-height: 32px;
-
   --channel-loading-header-height: calc(100vw / 5);
 }
 
-.loading-figure {
-  background-color: var(--icon-gray);
-}
+.loading-figure { background-color: var(--icon-gray); }
+.text-loading { margin-top: 4px; }
 
-.avatar-figure {
-  composes: loading-figure;
+.section-heading-loading,
+.text-loading,
+.avatar-default,
+.avatar-loading,
+.panel-thumb-default,
+.panel-heading-default,
+.panel-paragraph-default,
+.channel-loading-header-default,
+.subscribe-button-default { composes: loading-figure; }
+
+.avatar-default {
   height: var(--avatar-default-size);
   width: var(--avatar-default-size);
   border-radius: 50%;
 }
 
-.video-thumb-default,
-.video-title-default,
-.video-paragraph-default { composes: loading-figure; }
+.avatar-loading { composes: avatar-default; }
 
-.video-thumb-default { width: 128px; height: 72px; }
-.video-title-default { width: 128px; height: 18px; }
-.video-paragraph-default { width: 72px; height: 18px; }
+.section-heading-loading {
+  width: var(--panel-thumb-default-width);
+  height: var(--card-text-height);
+  margin-bottom: 8px;
+}
 
+.panel-thumb-default {
+  width: var(--panel-thumb-default-width);
+  height: var(--panel-thumb-default-height);
+}
+
+.panel-heading-default {
+  width: var(--panel-thumb-default-width);
+  height: var(--card-text-height);
+  composes: text-loading;
+}
+
+.panel-paragraph-default {
+  width: calc(var(--panel-thumb-default-width) * 0.75);
+  height: var(--card-text-height);
+}
 
 .channel-loading-header-default {
-  composes: loading-figure;
   height: var(--channel-loading-header-height);
 }
 
 .subscribe-button-default {
-  composes: loading-figure;
   width: var(--button-subscribe-default-width);
   height: var(--button-subscribe-default-height);
 }
@@ -45,37 +64,27 @@
 @media (min-width: 360px) {
 
   :root {
-    --video-panel-card-width: 160px;
-    --video-panel-card-height: 94px;
-
+    --panel-thumb-default-width: 160px;
+    --panel-thumb-default-height: 90px;
+    --card-text-height: 20px;
     --avatar-default-size: 64px;
-
     --button-subscribe-default-width: 180px;
     --button-subscribe-default-height: 40px;
-
     --channel-loading-header-height: calc(100vw / 6);
   }
 
-  .video-thumb-default { width: 160px; height: 90px; }
-  .video-title-default { width: 160px; height: 20px; }
-  .video-paragraph-default { width: 128px; height: 20px; }
 }
 
 @media (min-width: 1080px) {
 
   :root {
-    --video-panel-card-width: 210px;
-    --video-panel-card-height: 124px;
-
+    --panel-thumb-default-width: 210px;
+    --panel-thumb-default-height: 118px;
+    --card-text-height: 24px;
     --avatar-default-size: 80px;
-
     --button-subscribe-default-width: 210px;
     --button-subscribe-default-height: 48px;
-
     --channel-loading-header-height: calc(100vw / 7);
   }
 
-  .video-thumb-default { width: 210px; height: 118px; }
-  .video-title-default { width: 210px; height: 22px; }
-  .video-paragraph-default { width: 160px; height: 22px; }
 }

@@ -17,10 +17,6 @@
   justify-content: center;
 }
 
-.channelAvatarLoading {
-  composes: avatar-figure from '../../styles/figures.css';
-}
-
 .channelSubscribeLoadingWrapper {
   grid-column: 3/4;
   display: flex;
@@ -28,6 +24,5 @@
   align-items: center;
 }
 
-.channelSubscribeLoading {
-  composes: subscribe-button-default from '../../styles/figures.css';
-}
+.channelAvatarLoading { composes: avatar-loading from '../../styles/figures.css'; }
+.channelSubscribeLoading { composes: subscribe-button-default from '../../styles/figures.css'; }
