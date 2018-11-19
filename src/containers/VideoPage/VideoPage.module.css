@@ -3,32 +3,14 @@
 @media (min-width: 1080px) {
   .watchVideo {
     padding: 24px 64px;
-
     display: grid;
-    grid-template-columns: repeat(7, 0.9fr) repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: auto 424px;
     grid-gap: 16px;
   }
 
-  .videoDetailWrapper {
-    grid-column: 1/8;
-    grid-row-start: 1;
-  }
-
-  .relatedVideosList {
-    grid-column: 8/11;
-    grid-row-start: 1;
-  }
+  .videoDetailWrapper { grid-column: 1/1; }
+  .relatedVideosList { grid-column: 2/3; }
 }
 
 @media (min-width: 1280px) { .watchVideo { padding: 24px 72px; } }
-
-@media (min-width: 1440px) {
-  .watchVideo {
-    padding: 24px 96px;
-    display: grid;
-    grid-template-columns: repeat(7, 1.3fr) repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 16px;
-  }
-}
+@media (min-width: 1440px) { .watchVideo { padding: 24px 96px; } }

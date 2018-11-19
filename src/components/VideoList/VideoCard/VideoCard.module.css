@@ -38,6 +38,7 @@
 .separator { padding: 0 4px; }
 .about { display: none; }
 
+
 .cardLightBigResponsive h1,
 .cardFullBigResponsive h1 { font-size: 0.7em; }
 
@@ -54,22 +55,40 @@
 .cardLightSmall span { display: none; }
 .cardLightSmall p { display: none; }
 
-@media (min-width: 1080px) {
-  .about { display: block; font-size: 0.84em; }
-}
+@media (min-width: 360px) {
 
-@media (min-width: 1280px) {
   .cardLightBigResponsive h1,
-  .cardFullBigResponsive h1 { font-size: 0.78em; }
+  .cardFullBigResponsive h1 { font-size: 0.7em; }
 
   .cardFullBigResponsive h2,
   .cardLightBigResponsive h2,
   .cardFullBigResponsive h3,
   .cardLightBigResponsive h3,
   .cardFullBigResponsive span,
-  .cardLightBigResponsive span { font-size: 0.62em; display: inline-block; }
+  .cardLightBigResponsive span { font-size: 0.7em; }
 
-  .cardLightSmall h1 { font-size: 0.78em; }
+  .cardLightSmall h1 { font-size: 0.7em; }
   .cardLightSmall h2,
-  .cardLightSmall h3 { font-size: 0.62em; margin: 0; margin-bottom: 4px; }
+
+  .cardLightSmall h3 { font-size: 0.7em; }
+
+}
+
+@media (min-width: 1080px) {
+  .about { display: block; font-size: 0.84em; }
+
+  .cardLightBigResponsive h1,
+  .cardFullBigResponsive h1 { font-size: 0.8em; }
+
+  .cardFullBigResponsive h2,
+  .cardLightBigResponsive h2,
+  .cardFullBigResponsive h3,
+  .cardLightBigResponsive h3,
+  .cardFullBigResponsive span,
+  .cardLightBigResponsive span { font-size: 0.76em; }
+
+  .cardLightSmall h1 { font-size: 0.8em; }
+
+  .cardLightSmall h2,
+  .cardLightSmall h3 { font-size: 0.76em; }
 }

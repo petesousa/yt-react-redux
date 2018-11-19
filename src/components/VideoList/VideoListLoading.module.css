@@ -1,13 +1,13 @@
 
-.videoPanelItemLoading {
+.videoListItemLoading {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto;
   grid-gap: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .cardSmall { composes: list-thumb-default from '../../styles/figures.css'; }
 .cardBigResponsive { composes: list-big-thumb-default from '../../styles/figures.css'; }
-.videoPanelTitle { composes: list-heading-default from '../../styles/figures.css'; }
-.videoPanelParagraph { composes: list-paragraph-default from '../../styles/figures.css'; }
+.videoListTitle { composes: list-heading-default from '../../styles/figures.css'; }
+.videoListParagraph { composes: list-paragraph-default from '../../styles/figures.css'; }

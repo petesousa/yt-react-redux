@@ -9,14 +9,14 @@ const VideoListLoading = ({ thumbSize }) => {
   const cardClass = `card${thumbSize}`
   return (
     <div className={styles.loadingVideosContainer}>
-      <ul className={styles.videoPanelLoading}>
+      <ul className={styles.videoListLoading}>
         { items.map((x, index) => {
           return (
-            <li key={x+index} className={styles.videoPanelItemLoading}>
+            <li key={x+index} className={styles.videoListItemLoading}>
             <div className={styles[cardClass]}></div>
-            <div className={styles.videoPanelMeta}>
-            <h3 className={styles.videoPanelTitle}> </h3>
-            <p className={styles.videoPanelParagraph}> </p>
+            <div className={styles.videoListMeta}>
+            <h3 className={styles.videoListTitle}> </h3>
+            <p className={styles.videoListParagraph}> </p>
             </div>
             </li>
           )
