@@ -15,8 +15,8 @@ const VideoListLoading = ({ thumbSize }) => {
             <li key={x+index} className={styles.videoPanelItemLoading}>
             <div className={styles[cardClass]}></div>
             <div className={styles.videoPanelMeta}>
-            <h3> </h3>
-            <p> </p>
+            <h3 className={styles.videoPanelTitle}> </h3>
+            <p className={styles.videoPanelParagraph}> </p>
             </div>
             </li>
           )

@@ -1,5 +1,4 @@
 
-
 .videoPanelItemLoading {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -8,45 +7,7 @@
   margin-bottom: 12px;
 }
 
-.cardSmall,
-.cardBigResponsive {
-  background-color: var(--icon-gray);
-  width: 128px;
-  height: 72px;
-}
-
-.videoPanelMeta h3,
-.videoPanelMeta p {
-  height: 20px;
-  width: 120px;
-  background-color: var(--icon-gray);
-}
-
-.videoPanelMeta p { width: 96px; }
-
-@media (min-width: 360px) {
-  .cardSmall,
-  .cardBigResponsive {
-    background-color: var(--icon-gray);
-    width: 160px;
-    height: 90px;
-  }
-
-  .videoPanelMeta h3,
-  .videoPanelMeta p {
-    height: 20px;
-    width: 180px;
-    background-color: var(--icon-gray);
-  }
-
-  .videoPanelMeta p { width: 124px; }
-}
-
-@media (min-width: 1080px) {
-
-  .cardBigResponsive {
-    width: 246px;
-    height: 138px;
-  }
-
-}
+.cardSmall { composes: list-thumb-default from '../../styles/figures.css'; }
+.cardBigResponsive { composes: list-big-thumb-default from '../../styles/figures.css'; }
+.videoPanelTitle { composes: list-heading-default from '../../styles/figures.css'; }
+.videoPanelParagraph { composes: list-paragraph-default from '../../styles/figures.css'; }

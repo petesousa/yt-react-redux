@@ -2,6 +2,10 @@
 :root {
   --panel-thumb-default-width: 128px;
   --panel-thumb-default-height: 72px;
+  --list-thumb-default-width: 128px;
+  --list-thumb-default-height: 72px;
+  --list-big-thumb-default-width: 128px;
+  --list-big-thumb-default-height: 72px;
   --card-text-height: 18px;
   --avatar-default-size: 48px;
   --button-subscribe-default-width: 140px;
@@ -10,7 +14,8 @@
 }
 
 .loading-figure { background-color: var(--icon-gray); }
-.text-loading { margin-top: 4px; }
+.text-loading-mt { margin-top: 4px; }
+.text-loading-mb { margin-bottom: 4px; }
 
 .section-heading-loading,
 .text-loading,
@@ -19,6 +24,10 @@
 .panel-thumb-default,
 .panel-heading-default,
 .panel-paragraph-default,
+.list-thumb-default,
+.list-big-thumb-default,
+.list-heading-default,
+.list-paragraph-default,
 .channel-loading-header-default,
 .subscribe-button-default { composes: loading-figure; }
 
@@ -41,14 +50,35 @@
   height: var(--panel-thumb-default-height);
 }
 
+.list-thumb-default {
+  width: var(--list-thumb-default-width);
+  height: var(--list-thumb-default-height);
+}
+
+.list-big-thumb-default {
+  width: var(--list-big-thumb-default-width);
+  height: var(--list-big-thumb-default-height);
+}
+
 .panel-heading-default {
   width: var(--panel-thumb-default-width);
   height: var(--card-text-height);
-  composes: text-loading;
+  composes: text-loading-mt;
 }
 
 .panel-paragraph-default {
   width: calc(var(--panel-thumb-default-width) * 0.75);
+  height: var(--card-text-height);
+}
+
+.list-heading-default {
+  width: var(--list-thumb-default-width);
+  height: var(--card-text-height);
+  composes: text-loading-mb;
+}
+
+.list-paragraph-default {
+  width: calc(var(--list-thumb-default-width) * 0.75);
   height: var(--card-text-height);
 }
 
@@ -66,6 +96,10 @@
   :root {
     --panel-thumb-default-width: 160px;
     --panel-thumb-default-height: 90px;
+    --list-thumb-default-width: 160px;
+    --list-thumb-default-height: 90px;
+    --list-big-thumb-default-width: 160px;
+    --list-big-thumb-default-height: 90px;
     --card-text-height: 20px;
     --avatar-default-size: 64px;
     --button-subscribe-default-width: 180px;
@@ -80,6 +114,10 @@
   :root {
     --panel-thumb-default-width: 210px;
     --panel-thumb-default-height: 118px;
+    --list-thumb-default-width: 160px;
+    --list-thumb-default-height: 90px;
+    --list-big-thumb-default-width: 246px;
+    --list-big-thumb-default-height: 138px;
     --card-text-height: 24px;
     --avatar-default-size: 80px;
     --button-subscribe-default-width: 210px;
