@@ -50,8 +50,7 @@ class VideoPage extends Component {
   renderVideoList = () => {
     return (
       <VideoList
-        thumbSize="Small"
-        mode="Light"
+        page="videoPage"
         videoList={this.props.videoPageRelatedVideos} />
     )
   }

@@ -18,7 +18,6 @@ const VideoCardMeta = ({ metaData }) => {
           {channelTitle}
         </Link>
       </h2>
-      <span className={styles.separator}> . </span>
       <h3 className={styles.statistics}>{views} views</h3>
       <p className={styles.about}>{description.substring(0,156)}...</p>
     </div>

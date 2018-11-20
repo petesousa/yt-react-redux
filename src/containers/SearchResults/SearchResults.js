@@ -27,8 +27,7 @@ class SearchResults extends Component {
   renderVideoList = () => {
     return (
       <VideoList
-        thumbSize="BigResponsive"
-        mode="Full"
+        page="searchResults"
         videoList={this.props.searchPageVideos} />
     )
   }

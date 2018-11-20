@@ -7,7 +7,7 @@ import VideoCardMeta from './VideoCardMeta'
 
 import styles from './VideoCard.module.css'
 
-const VideoCard = ({ video, thumbSize, mode }) => {
+const VideoCard = ({ video, thumbSize, mode, page }) => {
   if (!video.id) { return <div></div> }
 
   const videoId = video.id
@@ -17,7 +17,8 @@ const VideoCard = ({ video, thumbSize, mode }) => {
   const views = formatCounters(statistics.viewCount)
   const videoTitle = title.length >= 56 ? `${title.substring(0,56)}...` : title
   const metaData = { videoId, videoTitle, channelId, channelTitle, description, views }
-  const cardClassName = `card${mode}${thumbSize}`
+  const cardClassName = `${page}Card`
+
 
   return (
     <div className={styles[cardClassName]}>

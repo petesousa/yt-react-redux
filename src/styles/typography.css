@@ -12,17 +12,20 @@
 
 }
 
-.video-panel-card-text {
+.video-panel-card-text,
+.video-list-card-text {
   composes: card-text;
   font-size: 0.6em;
 }
 
 @media (min-width: 360px) {
   .section-title { font-size: 1.1em; }
-  .video-panel-card-text { font-size: 0.7em; }
+  .video-panel-card-text,
+  .video-list-card-text { font-size: 0.7em; }
 }
 
 @media (min-width: 1080px) {
   .section-title { font-size: 1.2em; }
-  .video-panel-card-text { font-size: 0.8em; }
+  .video-panel-card-text,
+  .video-list-card-text { font-size: 0.8em; }
 }
