@@ -39,9 +39,8 @@
 .videoTitle a { color: var(--carbon); }
 .statistics { color: var(--text-gray); }
 
-.videoPageCard p.about { display: none; }
-
-.searchResultsCard .channelTitle::after { display: none; }
+.videoPageCard p.about,
+.searchResultsCard .channelTitle::after,
 .searchResultsCard p.about { display: none; }
 
 
