@@ -1,9 +1,10 @@
 
 .searchResultsWrapper {
   padding: 6px;
+  padding-top: 12px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 96px auto;
+  grid-template-rows: auto;
 }
 .channelCardWrapper {
   grid-column: 1/2;

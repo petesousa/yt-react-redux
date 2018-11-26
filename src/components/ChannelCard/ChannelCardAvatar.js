@@ -5,8 +5,8 @@ import styles from './ChannelCard.module.css'
 
 class ChannelCardAvatar extends Component {
   render() {
-    const { url, size, alt, channelId } = this.props
-    const avatar = `avatar${size}`
+    const { url, alt, page, channelId } = this.props
+    const avatar = `${page}Avatar`
     return (
       <div className={styles.avatarWrapper}>
         <img

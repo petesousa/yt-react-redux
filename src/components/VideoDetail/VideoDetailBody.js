@@ -17,8 +17,7 @@ const VideoDetailBody = (props) => {
     <div className={styles.body}>
       <ChannelCard
         channel={channel}
-        avatarSize="Small"
-        mode="Header"
+        page="videoDetail"
         optionalParams={channelCardOptionalParams} />
 
       <div className={styles.about}>

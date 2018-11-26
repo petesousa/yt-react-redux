@@ -8,6 +8,9 @@
   --list-big-thumb-default-height: 72px;
   --card-text-height: 18px;
   --avatar-default-size: 48px;
+  --avatar-video-detail: 42px;
+  --avatar-search-results: 64px;
+  --avatar-channel-page: 64px;
   --button-subscribe-default-width: 140px;
   --button-subscribe-default-height: 32px;
   --channel-loading-header-height: calc(100vw / 5);
@@ -31,13 +34,35 @@
 .channel-loading-header-default,
 .subscribe-button-default { composes: loading-figure; }
 
-.avatar-default {
-  height: var(--avatar-default-size);
-  width: var(--avatar-default-size);
+.avatar {
   border-radius: 50%;
+  cursor: pointer;
 }
 
+.avatar-default {
+  composes: avatar;
+  height: var(--avatar-default-size);
+  width: var(--avatar-default-size);
+}
 .avatar-loading { composes: avatar-default; }
+
+.avatar-search-results {
+  composes: avatar;
+  height: var(--avatar-search-results);
+  width: var(--avatar-search-results);
+}
+
+.avatar-channel-page {
+  composes: avatar;
+  height: var(--avatar-channel-page);
+  width: var(--avatar-channel-page);
+}
+
+.avatar-video-detail {
+  composes: avatar;
+  height: var(--avatar-video-detail);
+  width: var(--avatar-video-detail);
+}
 
 .section-heading-loading {
   width: var(--panel-thumb-default-width);
@@ -102,6 +127,7 @@
     --list-big-thumb-default-height: 90px;
     --card-text-height: 20px;
     --avatar-default-size: 64px;
+    --avatar-search-results: 80px;
     --button-subscribe-default-width: 180px;
     --button-subscribe-default-height: 40px;
     --channel-loading-header-height: calc(100vw / 6);
@@ -120,6 +146,7 @@
     --list-big-thumb-default-height: 138px;
     --card-text-height: 24px;
     --avatar-default-size: 80px;
+    --avatar-search-results: 136px;
     --button-subscribe-default-width: 210px;
     --button-subscribe-default-height: 48px;
     --channel-loading-header-height: calc(100vw / 7);

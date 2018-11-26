@@ -19,8 +19,7 @@ class SearchResults extends Component {
     return (
       <ChannelCard
         channel={this.props.searchPageChannel.data}
-        avatarSize="BigResponsive"
-        mode="Full" />
+        page="searchResults" />
     )
   }
 

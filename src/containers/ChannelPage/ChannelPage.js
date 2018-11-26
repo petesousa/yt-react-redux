@@ -31,8 +31,7 @@ class ChannelPage extends Component {
         <div className={styles.channelCardWrapper}>
           <ChannelCard
             channel={channel}
-            avatarSize="Medium"
-            mode="Header" />
+            page="channel" />
         </div>
       </header>
     )

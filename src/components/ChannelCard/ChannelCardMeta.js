@@ -5,7 +5,7 @@ import ChannelCardSubscribeButton from './ChannelCardSubscribeButton'
 
 import styles from './ChannelCard.module.css'
 
-const ChannelCardMeta = ({ metaData, optionalParams = '' }) => {
+const ChannelCardMeta = ({ metaData, page, optionalParams = '' }) => {
   const { id, title, subscribers, videoCount, about } = metaData
   return (
     <div className={styles.metaDataWrapper}>
@@ -14,9 +14,15 @@ const ChannelCardMeta = ({ metaData, optionalParams = '' }) => {
           {title}
         </Link>
       </h1>
-      <h2 className={styles.statistics}>{subscribers} subscribers . {videoCount} videos </h2>
-      <p className={styles.about}>{about}</p>
-      <ChannelCardSubscribeButton subscribers={subscribers}/>
+      {
+        page === 'searchResults' &&
+        <h2 className={styles.statistics}>{subscribers} subscribers . {videoCount} videos </h2>
+      }
+      {
+        page === 'searchResults' &&
+        <p className={styles.about}>{about}</p>
+      }
+      { page !== 'searchResults' && <ChannelCardSubscribeButton subscribers={subscribers}/> }
       {
         optionalParams.data
         ?

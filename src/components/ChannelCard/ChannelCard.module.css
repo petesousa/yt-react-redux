@@ -1,5 +1,15 @@
 
-.card {
+.searchResultsCard {
+  width: 100%;
+  margin-bottom: 6px;
+
+  display: grid;
+  grid-template-columns: var(--list-big-thumb-default-width) auto;
+  grid-template-rows: var(--list-big-thumb-default-height);
+}
+
+.videoDetailCard,
+.channelCard {
   width: 100%;
   margin-bottom: 6px;
 
@@ -7,9 +17,6 @@
   grid-template-columns: max-content auto;
   grid-template-rows: max-content;
 }
-
-.cardFull,
-.cardHeader { composes: card; }
 
 .avatarWrapper {
   grid-column: 1/2;
@@ -20,29 +27,9 @@
   justify-content: center;
 }
 
-.avatar {
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.avatarSmall {
-  composes: avatar;
-  width: 42px;
-  height: 42px;
-}
-
-.avatarMedium {
-  composes: avatar;
-  width: 64px;
-  height: 64px;
-}
-
-.avatarBigResponsive {
-  composes: avatar;
-  width: 90px;
-  height: 90px;
-  margin: 0 35px;
-}
+.searchResultsAvatar { composes: avatar-search-results from '../../styles/figures.css'; }
+.channelAvatar { composes: avatar-channel-page from '../../styles/figures.css'; }
+.videoDetailAvatar { composes: avatar-video-detail from '../../styles/figures.css'; }
 
 .metaDataWrapper {
   grid-column: 2/3;
@@ -62,15 +49,10 @@
 .statistics, .optParams { color: var(--text-gray); }
 .title, .statistics, .optParams { margin-bottom: 2px; }
 
-.about {
-  color: var(--text-gray);
-  width: 380px;
-  display: none;
-}
+.about { display: none; }
 
 .cardHeader h2,
 .cardHeader p { display: none; }
-.cardFull button { display: none; }
 
 .subscribeButtonWrapper {
   position: absolute;
@@ -99,13 +81,6 @@
 }
 
 @media (min-width: 1080px) {
-
-  .channelCard {
-    width: 100%;
-    margin-bottom: 12px;
-    grid-template-columns: max-content auto;
-    grid-template-rows: auto;
-  }
 
   .avatarWrapper { grid-column: 1/2; grid-row: 1/2; }
   .avatarBigResponsive { width: 136px; height: 136px; margin: 0 55px;}
