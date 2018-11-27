@@ -1,9 +1,17 @@
 
-# YouTube Clone on React and Redux-Saga
+## YouTube Clone on React and Redux-Saga
 
-This app was created to display my skills as a React developer. 
+This web app was created for the solely purpose of displaying my current skills as a React developer and does not in any way pretend to be associeated with YouTube.
 
-## Getting Started
+### Techniques Used
+
+React
+Redux-Saga
+React Router
+CSS Modules
+Layout focused on CSS Grid
+
+### Getting Started
 
 If you clone this repository the app won't work right away because the file with the YouTube API credentials is not present.
 
