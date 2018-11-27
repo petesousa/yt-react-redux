@@ -1,13 +1,18 @@
 
-This app was created to display my skills as a React developer.
+# YouTube Clone on React and Redux-Saga
 
-You can see the app working at the link on the title.
+This app was created to display my skills as a React developer. 
 
-If you clone this repository the app won't work because the file with the YouTube API credentials is not present. 
-If yout want to make it work, create a file called ytApi.js on the directory /src/sagas with the following content and insert your API key.
+## Getting Started
 
+If you clone this repository the app won't work right away because the file with the YouTube API credentials is not present.
+
+To make it work, create a file called ytApi.js on the directory /src/sagas with the following content and insert your API key.
+
+```
 const credentials = {
   apiKey: 'YOUR_API_KEY_HERE'
 }
 
 export default credentials
+```
