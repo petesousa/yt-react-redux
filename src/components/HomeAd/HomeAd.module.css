@@ -40,9 +40,10 @@
   width: 72px;
   border-radius: 50%;
   background-color: var(--carbon);
-  background-image: url('./img/pedrosousa.jpg');
+  background-image: url('./img/petesousa_002.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   filter: grayscale(16%);
 }
 
