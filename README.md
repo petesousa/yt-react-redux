@@ -1,44 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## YouTube Clone on React and Redux-Saga
 
-In the project directory, you can run:
+This web app was created for the solely purpose of displaying my current skills as a React developer and does not in any way pretend to be associeated with YouTube.
 
-### `npm start`
+### Techniques Used
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React
+Redux-Saga
+React Router
+CSS Modules
+Layout focused on CSS Grid
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Getting Started
 
-### `npm test`
+If you clone this repository the app won't work right away because the file with the YouTube API credentials is not present.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To make it work, create a file called ytApi.js on the directory /src/sagas with the following content and insert your API key.
 
-### `npm run build`
+```
+const credentials = {
+  apiKey: 'YOUR_API_KEY_HERE'
+}
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+export default credentials
+```
